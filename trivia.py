@@ -97,12 +97,12 @@ score = 0
 valid_categories = [
     "Science", "Geography", "Food", "Technology", "Sports",
     "History", "General", "Art", "Literature", "Music",
-    "Language", "Entertainment"
+    "Language", "Entertainment", "Finance", "Math"
 ]
 
 while True:
     category = input(
-        "Choose a category (Science, Geography, Food, Technology, Sports, History, General, Art, Literature, Music, Language, Entertainment) or type 'exit': "
+        f"Choose a category ({', '.join(valid_categories)}) or type 'exit': "
     ).strip()
 
     normalized_category = category.lower()
